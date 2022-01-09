@@ -1,0 +1,203 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    --nav-color:white;
+    --navbgcolor:rgb(156, 167, 160);
+    scroll-behavior: smooth;
+}
+body{background-image:url("kb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+
+/*------------------------------------- navbar styling-----------------------------------------------------------*/
+.navbar{
+    height:10vh;
+    color:var(--nav-color);
+    background-color: var(--navbgcolor);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start;
+    font-size: 1.5rem;
+    /* padding:20px; */
+    padding-left:20px;
+    padding-right:20px;
+}
+nav .navbar ul li{
+    display: inline-block;
+    /* padding: 6px; */
+    
+
+}
+nav .navbar ul li a{
+    text-decoration:none;
+    color:white;
+    border-style:solid;
+    border-color:transparent;
+    /* border-radius:2px; */
+    
+    padding:16px;
+    
+    
+
+}
+nav .navbar ul li a:hover{
+    background-color: aquamarine;
+    color:black;
+    
+    border-bottom:4px solid white;
+    
+}
+
+/*-------------------------------------modal styling-----------------------------------------------------------*/
+.modal{
+    display:block;
+    position:fixed;
+    z-index:1;
+    overflow:auto;
+    left:0;
+    right:0;
+    top: 0;
+    height:100%;
+    width:100%;
+    background-color:rgba(19, 10, 10, 0.521);
+    
+}
+.modalcnt{
+    background-color: rgb(213, 248, 177);
+    margin:10% auto;
+    width:50%;
+    height:50%;
+    box-shadow: 0rem 0.4rem 2rem rgba(231, 101, 26, 0.555);
+    border-radius: 3px;
+    padding:1rem;
+
+}
+.close{
+    float:right;
+}
+.close:hover{
+    color:red;
+    cursor:pointer;
+
+
+}
+#wes{
+    background: none;
+    border:none;
+    font-size: 1.4rem;
+}
+.name{
+    margin-top:3%;
+    margin-left: 40%;
+}
+.namesb{
+    margin-top:3%;
+    margin-left: 45%;
+    
+}
+/* -------------------------------------------landing styling-------------------------------------------------------- */
+.landing{
+    background-image:linear-gradient(rgba(0, 0, 255, 0.473) , rgba(255, 0, 0, 0.726)),url("kb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height:100vh;
+}
+/* ----------------------------------------------intro styling-------------------------------------------------- */
+
+.introleft{
+    overflow:auto;
+    height: 70vh;
+    width:40vw;
+    border-radius: 6px;
+    background-color: rgba(255, 254, 247, 0.651);
+    padding: 30px;
+    margin-top:6rem;
+    margin-left:5rem;
+
+    box-shadow: 0rem 0.4rem 2rem rgba(90, 86, 84, 0.795);
+    display: inline-block;
+
+}
+
+.introright{
+    /* overflow:auto; */
+    height: 70vh;
+    width:40vw;
+    border-radius: 6px;
+    background-color: rgba(255, 254, 247, 0.651);
+    padding: 30px;
+    margin-left:5rem;
+    margin-top:6rem;
+    box-shadow: 0rem 0.4rem 2rem rgba(90, 86, 84, 0.795);
+    display: inline-block;
+}
+.introright>img{
+    height:65vh ;
+    width: 35vw;
+    border-radius:6px;
+
+    
+}
+/* ---------------------------------benefits styling-------------------------------------------------------- */
+.benefits{
+    background-color:rgba(255, 240, 245, 0.767);
+    height: 100vh;
+    margin-top:10rem;
+}
+.center{
+    overflow:auto;
+    height: 70vh;
+    width:70vw;
+    border-radius: 6px;
+    background-color: rgba(255, 254, 247, 0.651);
+    padding: 30px;
+    margin-top:7rem;
+    /* margin-left:5rem; */
+    box-shadow:0rem 0.4rem 2rem rgba(90, 86, 84, 0.795);
+    display: inline-block;
+
+
+}
+.overall{
+    background-color:rgba(255, 240, 245, 0.767);
+    height: 100vh;
+    margin-top:10rem;
+    padding: 3rem;
+}
+.options{
+    /* background-color:rgba(255, 240, 245, 0.767); */
+    /* height: 100vh; */
+    /* margin-top:10rem; */
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* padding: 3rem; */
+
+}
+.opt{
+    width:27vw;
+    padding: 5px;
+    margin: 1rem;
+    height: 70vh;
+    box-shadow:0rem 0.4rem 2rem rgba(90, 86, 84, 0.795);
+    text-align: center;
+    overflow:auto;
+}
+.opt img{
+    height:60% ;
+    width:80%;
+}
+/*------------------------------------- navbar responsive-----------------------------------------------------------*/
+@media(max-width:770px){
+    nav .navbar{
+        display:none;
+    }
+    
+}
