@@ -2,6 +2,8 @@ var n=document.getElementsByClassName("name")[0].value;
 function hide(){
     var modal=document.getElementsByClassName("modal")[0];
     var n=document.getElementsByClassName("name")[0].value;
+    var w=document.getElementById("welcomed").value;
+     w==n;
     if(n=="")
         alert("Please Enter your name first");
     else
@@ -10,6 +12,7 @@ function hide(){
     
 
 }
+
 function naam()
 {
     var n=document.getElementsByClassName("name")[0].value;
